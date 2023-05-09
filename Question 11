@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    int n;
+
+    printf("Enter n: ");
+
+    scanf("%d", &n);
+
+    long long sum = 0;  // use long long to handle large values
+
+    for (int i = 1; i <= n; i++) {
+
+        sum += pow(i, i);  // use pow function to calculate i^i
+
+    }
+
+    printf("Sum of series 1^1 + 2^2 + 3^3 + ... + %d^%d is %lld\n", n, n, sum);
+
+    return 0;
+
+}
